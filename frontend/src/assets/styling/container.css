@@ -3,7 +3,7 @@
 .row-to-col-container {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 1.25em;
     align-items: center;
     width: 100%;
 }
@@ -23,6 +23,10 @@ div.no-margins-container,
 
 .col-gap-container {
     flex-direction: column;
+}
+
+.max-width-container {
+    width: 100%;
 }
 
 .input-textarea-container {

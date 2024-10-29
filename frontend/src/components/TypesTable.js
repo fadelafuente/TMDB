@@ -35,21 +35,23 @@ export default function TypesTable({ types }) {
             <div className="types-table">
                 <table>
                     <thead>
-                        <th className="types-table-key">
-                            <div className="type-key-item">
-                                defending <BsCaretRightFill />
-                            </div>
-                            <div className="type-key-item">
-                                attacking <BsCaretDownFill />
-                            </div>
-                        </th>
-                        {
-                            Array.from(types, type => (
-                                <th>
-                                    { type.substring(0, 3) }
-                                </th>
-                            ))
-                        }
+                        <tr>
+                            <th className="types-table-key">
+                                <div className="type-key-item">
+                                    defending <BsCaretRightFill />
+                                </div>
+                                <div className="type-key-item">
+                                    attacking <BsCaretDownFill />
+                                </div>
+                            </th>
+                            {
+                                Array.from(types, type => (
+                                    <th>
+                                        { type.substring(0, 3) }
+                                    </th>
+                                ))
+                            }
+                        </tr>
                     </thead>
                     <tbody>
                         { 

@@ -23,16 +23,16 @@ export default function StatChart() {
                 <tbody>
                     {
                         Array.from(Object.keys(stats), stat => (
-                            <tr className="stat-row">
-                                <th key={ stat } className="stat-header">
+                            <tr className="stat-row" key={ `${stat}-row` }>
+                                <th className="stat-header">
                                     { stat }
                                 </th>
-                                <td className="stat-number" key={ `${ stat }-amount` }>
+                                <td className="stat-number">
                                     { stats[stat] }
                                 </td>
                                 {
                                     stat !== "total" ?
-                                        <td className="stat-bar-container" key={ `${ stat }-bar` }>
+                                        <td className="max-width-container">
                                             <StatBar stat={ stat } stats={ stats } total={ stats["total"] } />
                                         </td>
                                     :

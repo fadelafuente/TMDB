@@ -138,10 +138,6 @@ div.weakness-chart > table {
     text-align: right;
 }
 
-.stat-bar-container {
-    width: 100%;
-}
-
 .stat-bar {
     width: 100%;
     height: 1em;

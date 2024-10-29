@@ -8,6 +8,7 @@ import SocialInteractions from "./SocialInteractions";
 import { Col, NavDropdown, Row, Tab, Tabs } from "react-bootstrap";
 import WeaknessChart from "./WeaknessChart";
 import StatChart from "./StatChart";
+import EvoChain from "./EvoChain";
 
 import "../assets/styling/content.css";
 import "../assets/styling/UserProfile.css";
@@ -177,14 +178,14 @@ function ViewMon({ isAuthenticated }) {
                         <Tab title="Stats" eventKey="stats">
                             <StatChart />
                         </Tab>
-                        <Tab title="Weaknesses" eventKey="Weaknesses">
+                        <Tab title="Weaknesses" eventKey="weaknesses">
                             <WeaknessChart />
                         </Tab>
                         <Tab title="Moves" eventKey="moves">
 
                         </Tab>
-                        <Tab title="Gallery" eventKey="gallery">
-
+                        <Tab title="Evo. Chain" eventKey="evoChain">
+                            <EvoChain />
                         </Tab>
                     </Tabs>
                     <div className="mon-interactions">

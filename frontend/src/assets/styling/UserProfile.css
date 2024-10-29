@@ -82,6 +82,7 @@ a.dropdown-toggle {
 button.nav-link, button.nav-link:active {
     color: var(--text-color);
     border-radius: 0;
+    text-wrap: nowrap;
 }
 
 button.nav-link:hover {
@@ -124,7 +125,8 @@ div.follow > a:active {
 }
 
 div.item-card {
-    margin-bottom: 12px;
+    margin-bottom: 1em;
+    align-items: baseline;
 }
 
 div.follow-username {

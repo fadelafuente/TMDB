@@ -224,3 +224,33 @@ div.interaction-nums > span {
     font-size: small;
     display: block;
 }
+
+div.evo-card {
+    width: 100%;
+    align-items: baseline;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    border-bottom: 0.0625em solid var(--input-box-color);
+}
+
+div.evo-card > p {
+    margin: 0;
+}
+
+div.evo-card:hover {
+    padding-left: 1.25em;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+div.rounded-icon {
+    display: flex;
+    background-color: var(--accent-color);
+    width: 2em;
+    height: 2em;
+    min-width: 2em;
+    max-width: 2em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}

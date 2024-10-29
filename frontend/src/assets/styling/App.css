@@ -152,8 +152,6 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 32px;
-  height: 32px;
   border: 0px;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -255,4 +253,8 @@ div.modal-body {
 
 div.outer-modal-footer {
   padding: 0.75em 1.25em 0.75em 1.25em !important;
+}
+
+div.top-border {
+  border-top: 0.0625em solid var(--input-box-color);
 }

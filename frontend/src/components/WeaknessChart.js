@@ -45,13 +45,15 @@ export default function WeaknessChart() {
         <div className="weakness-chart bottom-barrier">
             <table>
                 <thead>
-                    {
-                        Array.from(Object.keys(weaknesses), attacking_type => (
-                            <th className="weakness-chart-cell-spacing" key={ attacking_type }>
-                                { attacking_type.substring(0, 3) }
-                            </th>
-                        ))
-                    }
+                    <tr>
+                        {
+                            Array.from(Object.keys(weaknesses), attacking_type => (
+                                <th className="weakness-chart-cell-spacing" key={ attacking_type }>
+                                    { attacking_type.substring(0, 3) }
+                                </th>
+                            ))
+                        }
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
